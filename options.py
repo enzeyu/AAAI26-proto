@@ -20,7 +20,7 @@ def args_parser(parser):
     parser.add_argument('-num_edges', type = int, default= 4, help= 'number of edges')
     parser.add_argument('-seed', type = int, default = 0, help = 'random seed (defaul: 0)')
     parser.add_argument('-ldg', "--learning_rate_decay_gamma", type=float, default=0.99)
-    # FedAgg参数
+
     parser.add_argument("--T_agg", nargs="*", type=float, default=3.0, help="T_agg")
     args = parser.parse_args()
     return args
